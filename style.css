@@ -1,0 +1,67 @@
+/* アプリ全体のコンテナ */
+.recipe-app {
+    max-width: 640px; /* フォームと同じ幅に合わせる */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* 入力エリアのレイアウト */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+/* LPの仕様に合わせた入力欄（328px×36pxをベースに100%化） */
+.recipe-app .inputs {
+    width: 100%; /* スマホやコンテナ幅に合わせる */
+    height: 44px; /* 少し押しやすく調整 */
+    border: 1px solid #bfbfbf;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* 送信ボタン（LPの仕様：黄色 #ffd61a / 幅300px） */
+.recipe-app .btn-submit {
+    width: 300px;
+    height: 50px;
+    background-color: #ffd61a;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto; /* 中央寄せ */
+    transition: background-color 0.3s;
+}
+
+.recipe-app .btn-submit:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* AI回答エリア（ここが重要！） */
+.result-area {
+    margin-top: 20px;
+    padding: 24px;
+    border: 1px solid #bfbfbf;
+    background-color: #fdfdfd;
+    min-height: 100px;
+}
+
+/* AIが返したレシピ文章のスタイル */
+.recipe-content {
+    line-height: 1.8;
+    color: #333;
+    /* AIの改行（\n）をそのまま画面に反映させる設定 */
+    white-space: pre-wrap; 
+    text-align: left;
+}
+
+/* 読み込み中のアニメーション（おまけ） */
+.placeholder {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+}

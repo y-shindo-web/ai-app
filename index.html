@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="recipe-app">
+        <h2>AIシェフの残り物レシピ提案</h2>
+        <p>冷蔵庫にある食材をカンマ区切りで入力してください</p>
+        
+        <div class="input-area">
+            <input type="text" id="ingredients" placeholder="例：チーズ, トマト, 鶏肉" class="inputs">
+            <button id="ask-ai" class="btn-submit">レシピを提案してもらう</button>
+        </div>
+
+        <div id="recipe-result" class="result-area">
+            <p class="placeholder">ここにレシピが表示されます</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script> </body>
 </body>
 </html>
